@@ -37,4 +37,9 @@ public abstract class Tweet implements Tweetable {
 
     //No method body implemented! We leave that up to the subclasses (they MUST implement it)
     public abstract Boolean isImportant();
+
+    @Override
+    public String toString(){
+        return this.getDate().toString() + " | " + this.getMessage();
+    }
 }
