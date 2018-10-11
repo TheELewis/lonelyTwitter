@@ -5,6 +5,7 @@ import java.util.Date;
 public abstract class Tweet implements Tweetable {
     private String message;
     private Date date;
+    private String tweetID;
 
     public Tweet(String message){
         this.message = message;
@@ -42,5 +43,9 @@ public abstract class Tweet implements Tweetable {
 
     public Date getDate() {
         return date;
+    }
+
+    public void setTweetId(String tweetID ){
+        this.tweetID = tweetID;
     }
 }
